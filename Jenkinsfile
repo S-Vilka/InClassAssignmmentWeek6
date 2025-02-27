@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  tools {
+    maven 'Maven'
+    jdk 'Java_Home'
+  }
   stages{
   stage ('checking'){
   steps{
