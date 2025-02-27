@@ -1,5 +1,6 @@
 pipeline {
   agent any
+  stages{
   stage ('checking'){
   steps{
     git branch:'main', url: 'https://github.com/S-Vilka/InClassAssignmmentWeek6.git'
@@ -12,5 +13,6 @@ pipeline {
       sh 'mvn clean install'
     }
     
+    }
   }
 }
